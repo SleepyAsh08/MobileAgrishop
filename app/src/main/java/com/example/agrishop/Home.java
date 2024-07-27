@@ -56,7 +56,7 @@ public class Home extends AppCompatActivity {
                 switch (item.getId()){
                     case 1:
                         fragment = new seller();
-                        txtLabel.setVisibility(View.VISIBLE);
+                        txtLabel.setVisibility(View.GONE);
                         txtLabel.setText("Seller");
                         break;
                     case 2:
@@ -73,13 +73,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        if(getIntent().hasExtra("fragment")){
+        if (getIntent().hasExtra("fragment")) {
             String fragment = getIntent().getStringExtra("fragment");
-            if(fragment.equals("about")){
-                bottomNavigation.show(3,true);
+            if (fragment.equals("about")) {
+                bottomNavigation.show(3, true);
             } else {
-                bottomNavigation.show(1,true);
+                bottomNavigation.show(1, true);
             }
+        } else {
+            bottomNavigation.show(1, true); // Default to the first tab if no extras are found
         }
 
 

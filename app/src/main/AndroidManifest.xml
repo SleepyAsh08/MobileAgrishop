@@ -16,6 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriShop"
         tools:replace="android:label"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".Home"
