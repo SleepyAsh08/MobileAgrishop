@@ -32,6 +32,7 @@ public class LogIn extends AppCompatActivity {
             }
         });
 
+        Login = findViewById(R.id.btnLogin);
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +40,8 @@ public class LogIn extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         decorView = getWindow().getDecorView();
         decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener(){
             @Override
