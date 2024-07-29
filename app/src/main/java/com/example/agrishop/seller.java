@@ -56,7 +56,7 @@ public class seller extends Fragment {
     }
 
     public void requestJsonData(){
-        Log.d("request", "calledssssssssss");
+        Log.d("request", "called");
         requestQueue = Volley.newRequestQueue(context);
 
         stringRequest = new StringRequest(Request.Method.GET, "http://192.168.131.163:8080/products/all", new Response.Listener<String>() {

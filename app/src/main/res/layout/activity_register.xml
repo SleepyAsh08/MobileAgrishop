@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -27,14 +27,56 @@
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="First Name"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="20dp"
             android:background="@drawable/rounded_corner"
-            android:padding="18dp"
+            android:padding="10dp"
             android:inputType="text"
-            android:id="@+id/userName"
+            android:id="@+id/name"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:inputType="text"
+            android:id="@+id/userLast"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:inputType="text"
+            android:id="@+id/userMiddle"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:inputType="text"
+            android:id="@+id/dateBirth"
             />
 
         <EditText
@@ -46,7 +88,7 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             android:background="@drawable/rounded_corner"
-            android:padding="18dp"
+            android:padding="10dp"
             android:inputType="text"
             android:id="@+id/userPassword"
             />
@@ -60,9 +102,23 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             android:background="@drawable/rounded_corner"
-            android:padding="18dp"
+            android:padding="10dp"
             android:inputType="textEmailAddress"
             android:id="@+id/userEmail"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:inputType="text"
+            android:id="@+id/contactNumber"
             />
 
         <EditText
@@ -74,7 +130,7 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             android:background="@drawable/rounded_corner"
-            android:padding="18dp"
+            android:padding="10dp"
             android:inputType="text"
             android:id="@+id/userAddress"
             />
@@ -91,6 +147,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="#2AED2D"
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:id="@+id/btnRegister"/>
     </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>
